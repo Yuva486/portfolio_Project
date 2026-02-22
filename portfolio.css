@@ -1,0 +1,300 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* navigation bar */
+#profile{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    position: fixed;
+    display: flex;
+    box-shadow: 0px 10px 100px 10px #eee;
+    z-index: 4;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#left-header{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+#name{
+    padding-left: 12px;
+    font-size: 20px;
+}
+#right-header{
+    margin-left: auto;
+    padding-right: 40px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+#home{
+    padding: 270px 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.heading-navs{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+/* heading home */
+.bigText{
+    font-size: 41px;
+    font-weight: 200;
+    padding-bottom: 40px;
+    line-height: 60px;
+}
+/* buttons */
+Button{
+    width: 150px;
+    height: 60px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.blueButton{
+    color: white;
+    background-color: rgb(4, 146, 255);
+    border: none;
+}
+.greyButton{
+    color: rgb(71, 199, 238);
+    border-color: rgb(71, 199, 238);
+    background-color: white;
+}
+/* about */
+.aboutText{
+    font-size: 38px;
+    font-weight: 100 ;
+    padding-bottom: 90px;
+    line-height: 50px;
+}
+#about{
+    padding-top:120px;
+    margin-left:160px;
+    margin-right:160px;
+}
+.storyText{
+    font-size: 17px;
+}
+.MyHeading{
+    font-size: 27px;
+    color: black;
+}
+.storySkills{
+    display: flex;
+    color: rgb(86, 86, 86);
+    padding: 0px 160px;
+}
+#story{
+    width: 160%;
+    padding-bottom: 50px;
+}
+#skills{
+    width: 150%;
+    margin-left: 80px;
+}
+.skill{
+    display: inline-block;
+    margin-top: 15px;
+}
+.skillBoxes{
+    background-color: rgb(235, 235, 235);
+    padding: 12px 17px 12px 17px;
+    margin: 9px 9px 0px 9px;
+    border-radius: 5px;
+    display: inline-block;
+}
+/* logos of skills */
+.logosContainer{
+    height: auto;
+    width: 100%;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    background-color: #f8f8f8;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    margin-top: 100px;
+}
+.logosContainer i{
+    width: 105px;
+    height: 105px;
+    padding-top: 24px;
+    place-items: center;
+    background-color: white;
+    font-size: 53px;
+    color: #a2a2a2;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 10px 10px  20px rgb(202, 202, 202);
+}
+/* projects*/
+#projects{
+    padding-top: 120px;
+    margin-left:160px;
+    margin-right:160px;
+}
+.projText{
+    font-size: 36px;
+    padding-bottom: 120px;
+    line-height: 50px;
+}
+.eachprojText{
+    font-size: 35px;
+    margin-top: 50px;
+    padding-bottom: 15px;
+}
+.imgPro{
+    height: 300px;
+    width: 550px;
+    box-shadow: 0px 0px 5px grey;
+}
+.everyProItem{
+    width: 530px;
+    margin-bottom: 80px;
+    display: block;
+}
+.zigzag .everyProItem:nth-child(even){
+    margin-left: auto;
+}
+.proBlocks{
+    font-size: 17px;
+    padding-bottom: 22px;
+}
+/* form */
+#contact{
+    padding-top:120px;
+    padding-left:160px;
+    padding-right:160px;
+    padding-bottom: 100px;
+    background-color: #f6f6f6;
+}
+.conText{
+    font-size: 36px;
+    padding-bottom: 100px;
+    line-height: 50px;
+}
+.formContainer{
+    width:1200px;
+    height: 730px;
+    display : flex;
+    align-items: stretch;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    border-radius: 7px;
+    overflow: hidden;
+}
+.form{
+    flex: 1;
+    width: 100%;
+    justify-content: flex-start;
+    background-color: rgb(255, 255, 255);
+    padding: 60px;
+    border-radius: 9px;
+}
+#contactImg{
+    justify-content: flex-end;
+    height: 100%;
+    width: 450px;
+    background-image: url(contact-form-bg.jpg) ;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+#contactImg::before{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    inset: 0;
+    background: rgba(62, 164, 247, 0.65) ;
+}
+#inputBox{
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 20px;
+    border: 1px solid #ddd;
+}
+#textBox{
+    width: 100%;
+    height: 250px;
+    margin-top: 10px;
+    margin-bottom: 14px;
+    border-radius: 5px;
+    padding: 22px;
+    border: 1px solid #ddd;
+}
+.form button{
+    width: 100%;
+}
+::placeholder{
+    font-size: 17px;
+    color: rgb(113, 113, 113);
+}
+textarea:focus{
+font-size: 22px;
+outline: none;
+}
+
+/* footer */
+footer{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    height: 380px;
+}
+#downNav{
+    text-align: center;
+    padding: 100px 0 60px 0;
+}
+#downNav a{
+    color: white;
+    font-size:medium;
+    padding: 0px 40px;
+}
+hr{
+    margin: 0px 40px;
+}
+.icons{
+    padding: 30px 100px 30px 100px;
+    text-align: center;
+    font-size: x-large;
+    color: white;
+}
+.icons i{
+    padding: 30px;
+}
+#last{
+    height:110px ;
+    background-color: rgb(46, 46, 46);
+    font-size: small;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+#last a{
+    background-color: rgb(46, 46, 46);
+    color: rgb(255, 255, 255);
+    font-size: small;
+    text-decoration: underline;
+    font-weight:bold;
+}
